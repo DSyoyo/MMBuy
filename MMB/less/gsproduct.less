@@ -1,0 +1,161 @@
+@import "normalize";
+@import "base";
+@import "common";
+
+// 头部
+.mmB-header {
+
+  a {
+    display: block;
+    width: 50rem/75;
+    height: 44rem/75;
+    position: absolute;
+    left: 16rem/75;
+    top: 3rem/75;
+    .icon-jiantou3 {
+      font-size: 30rem/75;
+      color: #fff;
+    }
+  }
+  .title {
+    font-size: 24rem/75;
+    font-weight: 700;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    h1 {
+      line-height: 50rem/75;
+    }
+  }
+}
+
+// 选项
+// 
+.choice {
+  height: 36rem/75;
+  background-color: #fff;
+  position: relative;
+  border-bottom: 1px solid #ccc;
+  .search {
+    width: 36rem/75;
+    height: 36rem/75;
+    float: right;
+    text-align: center;
+    line-height: 36rem/75;
+    .ss {
+      font-size: 22rem/75;
+    }
+  }
+  .choice-title {
+    overflow: hidden;
+    margin-right: 5rem/75;
+    li {
+      width: 33.33%;
+      float: left;
+      height: 36rem/75;
+      line-height: 36rem/75;
+      text-align: center;
+      a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        font-size: 16rem/75;
+        color: #000;
+        .top {
+          font-size: 24rem/75;
+          vertical-align: middle;
+        }
+      }
+    }
+   
+  }
+}
+
+.choice-list1,
+.choice-list2,
+.total-price {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  // top: 0;
+  left: 0;
+  background-color: #fff;
+  z-index: 999;
+  box-shadow: 1px 1px 1px #ccc;
+  display: none;
+  ol{
+    
+    li {
+      width: 100%;
+      height: 40rem/75;
+      a {
+        width: 100%;
+        height: 100%;
+        display: block;
+        padding-left: 10rem/75;
+        border-bottom: 1px solid #ccc;
+        line-height: 40rem/75;
+        text-align: left;
+        font-size: 16rem/75;
+        color: #000;
+        border-bottom: 1px solid #ccc;
+      }
+      :last-of-type(a){
+        border-bottom: none;
+      }
+    }
+  }
+}
+.now {
+  display: block;
+}
+
+.total-price a .icon-right {
+  font-size: 24rem/75;
+  color: red;
+  margin-right: 20rem/75;
+  font-weight: bold;
+}
+
+// 内容详情
+
+.pro-detail {
+  width: 100%;
+  
+  padding: 10rem/75 10rem/75;
+  li {
+    float: left;
+    width: 49.5%;
+    margin-bottom: 10rem/75;
+  }
+  li:nth-child(odd) {
+    margin-right: 1%;
+  }
+  li a {
+    width: 100%;
+    height: 100%;
+    padding: 0 5rem/75 5rem/75 5rem/75;
+    display: block;
+    background-color: #fff;
+    .img-box {
+      width: 174rem/75;
+      height: 174rem/75;
+      margin: 0 auto;
+    }
+    .title {
+      font-size: 14rem/75;
+      color: #000;
+    }
+    .price {
+      color: #f8601d;
+      font-size: 20rem/75;
+    }
+    .order {
+      font-size: 14rem/75;
+      padding: 5rem/75 10rem/75;
+      color: #fff;
+      background-color: #ff9501;
+      border-radius: 5rem/75;
+    }
+  }
+}

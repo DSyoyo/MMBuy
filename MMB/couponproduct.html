@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>慢慢买优惠券</title>
+  <link rel="stylesheet" href="lib/iconfont/iconfont.css">
+  <link rel="stylesheet" href="lib/iconfont/iconfont.css">
+  <link rel="stylesheet" href="css/couponproduct.css">
+  <script src="lib/flexible/flexible.js"></script>
+
+</head>
+
+<body>
+
+  <!-- 遮罩框 -->
+  <div class="mask">
+    <div class="pics">
+      <ul class="imgs">
+        <!-- <li>
+          <img src="" alt="">
+        </li> -->
+      </ul>
+    </div>
+    <!-- 左右箭头 -->
+    <!-- <div class="clickpic">
+      <div class="prev">＜</div>
+      <div class="next">＞</div>
+    </div> -->
+  </div>
+
+  <div class="mmB-header">
+    <a href="javascript:history.go(-1)" class="back">
+        <i class="iconfont icon-jiantou3"></i>
+    </a>
+    <div class="title">
+      <h1>
+        肯德基优惠券
+      </h1>
+    </div>
+    <div class="app">
+      <img src="images/header_app.png" alt="">
+    </div>
+  </div>
+  <!-- 头部结束 -->
+
+  <!-- 列表 -->
+  <div class="main">
+    <div class="tips">
+      --点餐前出示手机中的优惠券，即可享受优惠--
+    </div>
+    <div class="coupon-list">
+      <ul class="coupon-details">
+        <!-- <li>
+          <a href="" class="clearfix">
+            <div class="pic fl">
+              <img src="" alt="">
+            </div>
+            <div class="info">
+              <p>C27  两人小食组 新奥尔良烤翅2块+薯条(中)+黄金鸡块5块+劲爆鸡米花(小) 2016年10月凭肯德基优惠券</p>
+              <strong>&yen; 23</strong>
+              <p class="time">有效期至</p>
+            </div>
+            <div class="arrow fr">
+
+            </div>
+          </a>
+        </li> -->
+      </ul>
+    </div>
+  </div>
+
+
+  <!-- 底部 -->
+  <div class="footer">
+    <div class="footer-top clearfix">
+      <a href="login.html">登录</a>
+      <a href="register.html">注册</a>
+      <a href="#">
+        <img src="images/footer-top.jpg"> 返回顶部
+      </a>
+    </div>
+    <div class="footer-bottom">
+      <p>
+        <a href="javascript:;" class="red">手机APP下载</a>
+        <a href="index.html" class="mobile">慢慢买手机版</a>
+        -- 掌上比价平台
+      </p>
+      <p>m.manmanbuy.com</p>
+    </div>
+  </div>
+
+
+  <script type="text/html" id="tpl">
+    {{each result v i}}
+    <li>
+        <a href="#" class="clearfix">
+          <div class="pic fl">
+            {{@v.couponProductImg}}
+          </div>
+          <div class="info">
+            <p>{{v.couponProductName}}</p>
+            <strong>{{v.couponProductPrice}}</strong>
+            <p class="time">{{v.couponProductTime}}</p>
+          </div>
+          <div class="arrow fr">
+              <i class="iconfont icon-more right"></i>
+          </div>
+        </a>
+      </li>
+      {{/each}}
+  </script>
+
+  <script type="text/html" id="pics">
+    {{each result v i}}
+    <li>
+      {{@v.couponProductImg}}
+    </li>
+    {{/each}}
+    <li>
+      <img src="http://d3.5ikfc.com/static/thumbs/1016/kfc-5ikfc-108_pc27.jpg" alt=" 两人小食组 新奥尔烤翅2块+薯条(中)+黄金鸡块5块+劲爆鸡米花(小) 2016年10月凭肯德基优惠券">
+    </li>
+  </script>
+
+
+
+
+  <script src="lib/artTemplate/template-web.js"></script>
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="js/common/Route.js"></script>
+  <script src="js/common/Tools.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/couponproduct.js"></script>
+
+</body>
+
+</html>
